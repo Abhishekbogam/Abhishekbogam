@@ -65,36 +65,6 @@
 
 ---
 
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Abhishekbogam&show_icons=true&theme=github_dark&hide_border=true&count_private=true&bg_color=0d1117" width="49%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Abhishekbogam&theme=github-dark-blue&hide_border=true&background=0d1117" width="49%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhishekbogam&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117" width="40%" />
-</p>
-
----
-
-## 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Abhishekbogam&theme=darkhub&no-frame=true&row=1&column=6" />
-</p>
-
----
-
-## 🎯 Achievements
-
-- 🥉 **3rd Place** — Microsoft × Tech Mahindra Ideathon (80+ teams) for an Agentic RAG model
-- 🏆 **Winner** — Microsoft Agentic AI Hackathon — multi-agent solution using AutoGen
-- ⭐ **Top Performer** — 2 consecutive years at Tech Mahindra
-- 🎯 **Pat on Back Award** — Outstanding technical delivery at Tech Mahindra
-
----
-
 ## 📜 Certifications
 
 | Certification | Issuer |
@@ -106,19 +76,6 @@
 | 🌐 Gen AI & GCP — AI White Belt | Google |
 | 📜 Intern Ignite Program | LTIMindtree |
 | 🏅 ReCogNurize 2.0 — Nurture Tek Knight | Cognizant |
-
----
-
-## 🚀 Featured Projects
-
-### 🔹 [TrustRAG](https://github.com/Abhishekbogam/TrustRAG)
-> Source-aware, memory-enabled RAG system with FastAPI, FAISS, and LLaMA-3 (Groq). Retrieval-first architecture with domain-aware controls to minimize hallucinations on large technical documents.
-
-### 🔹 [AI Financial Credibility Analyser](https://github.com/Abhishekbogam/AI-Based-Financial-Credibility-Analyser)
-> Production-ready AI system for automated KYC validation and financial risk assessment using Flask, Azure Blob Storage, Azure AI Document Intelligence, and Azure OpenAI. Deployed on Azure in 4 days.
-
-### 🔹 [AgenticRAG Orchestrator](https://github.com/Abhishekbogam/AgenticRAG-Orchestrator)
-> Multi-agent RAG system with clustered topic-based embedding, Sub-Query Decomposition Agent, and intelligent retrieval routing for improved semantic precision and multi-hop reasoning.
 
 ---
 
