@@ -1,0 +1,122 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="40%" style="stop-color:#0e1c2e"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f6feb;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#7b2fbe;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="glow2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0883e;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#7b2fbe;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="textgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff"/>
+      <stop offset="50%" style="stop-color:#a371f7"/>
+      <stop offset="100%" style="stop-color:#f0883e"/>
+    </linearGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="25"/>
+    </filter>
+    <filter id="textglow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- Ambient glow blobs -->
+  <ellipse cx="200" cy="150" rx="250" ry="180" fill="url(#glow1)" filter="url(#blur1)"/>
+  <ellipse cx="1000" cy="100" rx="200" ry="150" fill="url(#glow2)" filter="url(#blur2)"/>
+  <ellipse cx="600" cy="280" rx="300" ry="100" fill="#7b2fbe" opacity="0.08" filter="url(#blur1)"/>
+
+  <!-- Grid lines - subtle -->
+  <g stroke="#1f6feb" stroke-width="0.4" opacity="0.15">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="150" y1="0" x2="150" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="450" y1="0" x2="450" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="750" y1="0" x2="750" y2="300"/>
+    <line x1="900" y1="0" x2="900" y2="300"/>
+    <line x1="1050" y1="0" x2="1050" y2="300"/>
+  </g>
+
+  <!-- Floating code symbols left -->
+  <g font-family="monospace" opacity="0.12" fill="#58a6ff">
+    <text x="30" y="55" font-size="13">def</text>
+    <text x="30" y="85" font-size="11">  agent.run(</text>
+    <text x="30" y="105" font-size="11">    query=input</text>
+    <text x="30" y="125" font-size="11">  )</text>
+    <text x="30" y="160" font-size="13">class RAG:</text>
+    <text x="30" y="180" font-size="11">  retriever</text>
+    <text x="30" y="200" font-size="11">  generator</text>
+    <text x="30" y="230" font-size="13">@agent</text>
+    <text x="30" y="250" font-size="11">langGraph</text>
+    <text x="30" y="270" font-size="11">vLLM · FAISS</text>
+  </g>
+
+  <!-- Floating nodes right -->
+  <g opacity="0.25">
+    <circle cx="1100" cy="60" r="5" fill="#58a6ff"/>
+    <circle cx="1150" cy="100" r="3" fill="#a371f7"/>
+    <circle cx="1080" cy="130" r="4" fill="#f0883e"/>
+    <circle cx="1130" cy="170" r="6" fill="#58a6ff"/>
+    <circle cx="1090" cy="220" r="3" fill="#a371f7"/>
+    <circle cx="1160" cy="250" r="4" fill="#58a6ff"/>
+    <line x1="1100" y1="60" x2="1150" y2="100" stroke="#58a6ff" stroke-width="1"/>
+    <line x1="1150" y1="100" x2="1080" y2="130" stroke="#a371f7" stroke-width="1"/>
+    <line x1="1080" y1="130" x2="1130" y2="170" stroke="#f0883e" stroke-width="1"/>
+    <line x1="1130" y1="170" x2="1090" y2="220" stroke="#a371f7" stroke-width="1"/>
+    <line x1="1090" y1="220" x2="1160" y2="250" stroke="#58a6ff" stroke-width="1"/>
+  </g>
+
+  <!-- Accent lines left border -->
+  <rect x="0" y="0" width="4" height="300" fill="url(#textgrad)"/>
+
+  <!-- Main name text -->
+  <text x="200" y="130" font-family="'Segoe UI', Arial, sans-serif" font-size="58" font-weight="800" fill="url(#textgrad)" filter="url(#textglow)" letter-spacing="-1">Abhishek Bogam</text>
+
+  <!-- Subtitle -->
+  <text x="203" y="175" font-family="'Segoe UI', Arial, sans-serif" font-size="20" fill="#8b949e" letter-spacing="1">Gen AI Engineer · Agentic RAG · Multi-Agent Systems</text>
+
+  <!-- Tag pills -->
+  <g font-family="monospace" font-size="12">
+    <rect x="203" y="200" width="88" height="24" rx="12" fill="#1f6feb" opacity="0.25"/>
+    <text x="247" y="217" fill="#58a6ff" text-anchor="middle">LangChain</text>
+
+    <rect x="301" y="200" width="80" height="24" rx="12" fill="#7b2fbe" opacity="0.25"/>
+    <text x="341" y="217" fill="#a371f7" text-anchor="middle">LangGraph</text>
+
+    <rect x="391" y="200" width="55" height="24" rx="12" fill="#f0883e" opacity="0.2"/>
+    <text x="418" y="217" fill="#f0883e" text-anchor="middle">vLLM</text>
+
+    <rect x="456" y="200" width="50" height="24" rx="12" fill="#3fb950" opacity="0.2"/>
+    <text x="481" y="217" fill="#3fb950" text-anchor="middle">RAG</text>
+
+    <rect x="516" y="200" width="75" height="24" rx="12" fill="#1f6feb" opacity="0.18"/>
+    <text x="553" y="217" fill="#58a6ff" text-anchor="middle">FastAPI</text>
+
+    <rect x="601" y="200" width="65" height="24" rx="12" fill="#f0883e" opacity="0.18"/>
+    <text x="633" y="217" fill="#f0883e" text-anchor="middle">Azure AI</text>
+  </g>
+
+  <!-- Bottom company badge -->
+  <text x="203" y="268" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#484f58">@</text>
+  <text x="218" y="268" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#0078D4" font-weight="600">Tech Mahindra</text>
+  <text x="330" y="268" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#484f58">· Bengaluru, India 🇮🇳</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="296" width="1200" height="4" fill="url(#textgrad)" opacity="0.6"/>
+</svg>
