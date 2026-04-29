@@ -39,6 +39,7 @@ Previously, I engineered end-to-end LLM systems across RAG, agent orchestration,
 ## 🛠️ Skills & Tech Stack
 
 **Generative AI & RAG**
+
 ![LangChain](https://img.shields.io/badge/LangChain-00A67E?style=flat&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-FF6B35?style=flat&logoColor=white)
 ![RAG](https://img.shields.io/badge/RAG-7B2FBE?style=flat&logoColor=white)
@@ -47,6 +48,7 @@ Previously, I engineered end-to-end LLM systems across RAG, agent orchestration,
 ![Prompt Engineering](https://img.shields.io/badge/Prompt_Engineering-6d28d9?style=flat&logoColor=white)
 
 **LLM Inference & Models**
+
 ![vLLM](https://img.shields.io/badge/vLLM-FF4500?style=flat&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
 ![Groq](https://img.shields.io/badge/Groq-5E17EB?style=flat&logoColor=white)
@@ -54,28 +56,33 @@ Previously, I engineered end-to-end LLM systems across RAG, agent orchestration,
 ![MCP](https://img.shields.io/badge/MCP-5E17EB?style=flat&logoColor=white)
 
 **Multi-Agent Systems**
+
 ![Multi-Agent](https://img.shields.io/badge/Multi--Agent_Orchestration-FF4500?style=flat&logoColor=white)
 ![Agentic RAG](https://img.shields.io/badge/Agentic_RAG-1a56db?style=flat&logoColor=white)
 ![Task Agents](https://img.shields.io/badge/Task--Oriented_Agents-0ea472?style=flat&logoColor=white)
 
 **Backend & APIs**
+
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3572A5?style=flat&logo=python&logoColor=white)
 ![REST](https://img.shields.io/badge/RESTful_APIs-FF6B35?style=flat&logoColor=white)
 
 **Frontend**
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 
 **Data & Databases**
+
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 ![FAISS](https://img.shields.io/badge/FAISS-0078D4?style=flat&logoColor=white)
 
 **Cloud & Tools**
+
 ![Azure](https://img.shields.io/badge/Azure_AI-0078D4?style=flat&logo=microsoft-azure&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)
@@ -95,15 +102,6 @@ Previously, I engineered end-to-end LLM systems across RAG, agent orchestration,
 ![Cisco AI](https://img.shields.io/badge/Cisco_AI_Practitioner-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude_Basic_Certificate-D97757?style=for-the-badge&logoColor=white)
 
-</div>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Abhishekbogam&show_icons=true&theme=default&hide_border=true&title_color=1a56db&icon_color=6d28d9&text_color=374151&bg_color=f8fafc" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhishekbogam&layout=compact&theme=default&hide_border=true&title_color=1a56db&text_color=374151&bg_color=f8fafc" />
 </div>
 
 ---
