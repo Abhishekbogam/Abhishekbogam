@@ -1,0 +1,157 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Light background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f6ff"/>
+      <stop offset="50%" style="stop-color:#faf7ff"/>
+      <stop offset="100%" style="stop-color:#f0f9f4"/>
+    </linearGradient>
+
+    <!-- Name gradient - rich & clear -->
+    <linearGradient id="namegrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a56db"/>
+      <stop offset="55%" style="stop-color:#6c3fc5"/>
+      <stop offset="100%" style="stop-color:#0ea472"/>
+    </linearGradient>
+
+    <!-- Accent line gradient -->
+    <linearGradient id="accentgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a56db"/>
+      <stop offset="50%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+
+    <!-- Soft glow filters -->
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="nameglow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="subtle">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- Soft ambient color blobs -->
+  <ellipse cx="180" cy="120" rx="220" ry="160" fill="#dbeafe" opacity="0.55" filter="url(#subtle)"/>
+  <ellipse cx="1050" cy="180" rx="180" ry="130" fill="#ede9fe" opacity="0.5" filter="url(#subtle)"/>
+  <ellipse cx="620" cy="290" rx="280" ry="90" fill="#d1fae5" opacity="0.35" filter="url(#subtle)"/>
+
+  <!-- Subtle dot grid pattern -->
+  <g fill="#94a3b8" opacity="0.18">
+    <circle cx="100" cy="50" r="1.5"/>  <circle cx="160" cy="50" r="1.5"/>  <circle cx="220" cy="50" r="1.5"/>
+    <circle cx="100" cy="100" r="1.5"/> <circle cx="160" cy="100" r="1.5"/> <circle cx="220" cy="100" r="1.5"/>
+    <circle cx="100" cy="150" r="1.5"/> <circle cx="160" cy="150" r="1.5"/> <circle cx="220" cy="150" r="1.5"/>
+    <circle cx="100" cy="200" r="1.5"/> <circle cx="160" cy="200" r="1.5"/> <circle cx="220" cy="200" r="1.5"/>
+    <circle cx="100" cy="250" r="1.5"/> <circle cx="160" cy="250" r="1.5"/> <circle cx="220" cy="250" r="1.5"/>
+
+    <circle cx="1000" cy="50" r="1.5"/> <circle cx="1060" cy="50" r="1.5"/> <circle cx="1120" cy="50" r="1.5"/> <circle cx="1180" cy="50" r="1.5"/>
+    <circle cx="1000" cy="100" r="1.5"/><circle cx="1060" cy="100" r="1.5"/><circle cx="1120" cy="100" r="1.5"/><circle cx="1180" cy="100" r="1.5"/>
+    <circle cx="1000" cy="150" r="1.5"/><circle cx="1060" cy="150" r="1.5"/><circle cx="1120" cy="150" r="1.5"/><circle cx="1180" cy="150" r="1.5"/>
+    <circle cx="1000" cy="200" r="1.5"/><circle cx="1060" cy="200" r="1.5"/><circle cx="1120" cy="200" r="1.5"/><circle cx="1180" cy="200" r="1.5"/>
+    <circle cx="1000" cy="250" r="1.5"/><circle cx="1060" cy="250" r="1.5"/><circle cx="1120" cy="250" r="1.5"/><circle cx="1180" cy="250" r="1.5"/>
+  </g>
+
+  <!-- Floating code - left side, soft tone -->
+  <g font-family="'Courier New', monospace" opacity="0.14" fill="#1e3a8a" font-size="11">
+    <text x="28" y="56">def agent_pipeline():</text>
+    <text x="28" y="74">  retriever = FAISS.load()</text>
+    <text x="28" y="92">  chain = RAG(retriever)</text>
+    <text x="28" y="116">class MultiAgent:</text>
+    <text x="28" y="134">  tools = [search, code]</text>
+    <text x="28" y="152">  orchestrator = Graph()</text>
+    <text x="28" y="176">@router.post("/query")</text>
+    <text x="28" y="194">async def run(q: Query):</text>
+    <text x="28" y="212">  return agent.invoke(q)</text>
+    <text x="28" y="240">model: vLLM · LangGraph</text>
+    <text x="28" y="258">store: FAISS · ChromaDB</text>
+  </g>
+
+  <!-- Neural graph - right side -->
+  <g opacity="0.3">
+    <!-- Nodes -->
+    <circle cx="1095" cy="55" r="6" fill="#1a56db"/>
+    <circle cx="1148" cy="90" r="4" fill="#7c3aed"/>
+    <circle cx="1075" cy="120" r="5" fill="#0ea472"/>
+    <circle cx="1135" cy="155" r="7" fill="#1a56db"/>
+    <circle cx="1170" cy="110" r="3" fill="#7c3aed"/>
+    <circle cx="1088" cy="185" r="4" fill="#0ea472"/>
+    <circle cx="1155" cy="210" r="5" fill="#1a56db"/>
+    <circle cx="1100" cy="240" r="3" fill="#7c3aed"/>
+    <circle cx="1165" cy="255" r="4" fill="#0ea472"/>
+    <!-- Connections -->
+    <line x1="1095" y1="55" x2="1148" y2="90" stroke="#1a56db" stroke-width="1.2"/>
+    <line x1="1148" y1="90" x2="1075" y2="120" stroke="#7c3aed" stroke-width="1.2"/>
+    <line x1="1148" y1="90" x2="1170" y2="110" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="1075" y1="120" x2="1135" y2="155" stroke="#0ea472" stroke-width="1.2"/>
+    <line x1="1170" y1="110" x2="1135" y2="155" stroke="#1a56db" stroke-width="1"/>
+    <line x1="1135" y1="155" x2="1088" y2="185" stroke="#1a56db" stroke-width="1.2"/>
+    <line x1="1135" y1="155" x2="1155" y2="210" stroke="#7c3aed" stroke-width="1.2"/>
+    <line x1="1088" y1="185" x2="1100" y2="240" stroke="#0ea472" stroke-width="1"/>
+    <line x1="1155" y1="210" x2="1165" y2="255" stroke="#1a56db" stroke-width="1"/>
+    <line x1="1100" y1="240" x2="1165" y2="255" stroke="#7c3aed" stroke-width="1"/>
+  </g>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="300" fill="url(#accentgrad)" rx="0"/>
+
+  <!-- ── MAIN NAME ── Large, crisp, gradient on white -->
+  <text
+    x="200" y="135"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="64"
+    font-weight="700"
+    fill="url(#namegrad)"
+    filter="url(#nameglow)"
+    letter-spacing="-1.5"
+  >Abhishek Bogam</text>
+
+  <!-- Thin separator line under name -->
+  <rect x="200" y="147" width="540" height="2" fill="url(#accentgrad)" opacity="0.35" rx="1"/>
+
+  <!-- Subtitle -->
+  <text x="202" y="178" font-family="Georgia, serif" font-size="18" fill="#475569" letter-spacing="0.5" font-style="italic">
+    Gen AI Engineer · Agentic RAG · Multi-Agent Systems
+  </text>
+
+  <!-- Tag pills -->
+  <g font-family="'Courier New', monospace" font-size="11.5" font-weight="600">
+    <rect x="202" y="198" width="90" height="22" rx="11" fill="#dbeafe"/>
+    <text x="247" y="214" fill="#1d4ed8" text-anchor="middle">LangChain</text>
+
+    <rect x="300" y="198" width="86" height="22" rx="11" fill="#ede9fe"/>
+    <text x="343" y="214" fill="#6d28d9" text-anchor="middle">LangGraph</text>
+
+    <rect x="394" y="198" width="52" height="22" rx="11" fill="#fef3c7"/>
+    <text x="420" y="214" fill="#b45309" text-anchor="middle">vLLM</text>
+
+    <rect x="454" y="198" width="46" height="22" rx="11" fill="#d1fae5"/>
+    <text x="477" y="214" fill="#047857" text-anchor="middle">RAG</text>
+
+    <rect x="508" y="198" width="62" height="22" rx="11" fill="#dbeafe"/>
+    <text x="539" y="214" fill="#1d4ed8" text-anchor="middle">FastAPI</text>
+
+    <rect x="578" y="198" width="68" height="22" rx="11" fill="#e0f2fe"/>
+    <text x="612" y="214" fill="#0369a1" text-anchor="middle">Azure AI</text>
+
+    <rect x="654" y="198" width="50" height="22" rx="11" fill="#fce7f3"/>
+    <text x="679" y="214" fill="#9d174d" text-anchor="middle">FAISS</text>
+  </g>
+
+  <!-- Bottom info row -->
+  <g font-family="Georgia, serif" font-size="13.5">
+    <text x="202" y="260" fill="#64748b">🏢</text>
+    <text x="222" y="260" fill="#1a56db" font-weight="700">Tech Mahindra</text>
+    <text x="332" y="260" fill="#94a3b8">  ·  Bengaluru, India 🇮🇳</text>
+    <text x="530" y="260" fill="#94a3b8">  ·  🏆 Microsoft Agentic AI Hackathon Winner</text>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="295" width="1200" height="5" fill="url(#accentgrad)" opacity="0.5" rx="0"/>
+</svg>
